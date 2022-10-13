@@ -12,6 +12,7 @@ public class Flower {
     private FlowerColor color;
     @Getter
     private double price;
+    private FlowerType flowertype;
 
     public String getColor() {
         return color.toString();
