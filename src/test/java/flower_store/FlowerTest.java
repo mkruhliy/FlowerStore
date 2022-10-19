@@ -1,11 +1,16 @@
 package flower_store;
 
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Random;
+
+import org.junit.jupiter.api.Assertions;
 
 public class FlowerTest {
+    private static final Random RANDOM_GENERATOR = new Random();
+    private static final int MAX_PRICE = 100;
     private Flower flower;
 
     @BeforeEach
@@ -15,15 +20,15 @@ public class FlowerTest {
 
     @Test
     public void testPrice() {
-        int price = 20;
+        int price = RANDOM_GENERATOR.nextInt(MAX_PRICE);
         flower.setPrice(price);
-        assertEquals(price, flower.getPrice());
+        Assertions.assertEquals(price, flower.getPrice());
     }
 
     @Test
     public void testColor() {
         FlowerColor color = FlowerColor.RED;
         flower.setColor(color);
-        assertEquals("#FF0000", flower.getColor());
+        Assertions.assertEquals("#FF0000", flower.getColor());
     }
 }

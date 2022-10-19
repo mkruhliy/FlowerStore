@@ -1,5 +1,16 @@
 package flower_store;
 
 public enum FlowerType {
-    CHAMONILE, ROSE, TULIP;
+    CHAMOMILE("Chamomile"), ROSE("Rose"), TULIP("Tulip");
+
+    private String stringRepresentation;
+
+    FlowerType(String stringRepresentation) {
+        this.stringRepresentation = stringRepresentation;
+    }
+
+    @Override
+    public String toString() {
+        return stringRepresentation;
+    }
 }
