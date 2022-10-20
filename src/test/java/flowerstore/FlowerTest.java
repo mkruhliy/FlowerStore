@@ -1,4 +1,4 @@
-package flower_store;
+package flowerstore;
 
 
 import org.junit.jupiter.api.BeforeEach;
