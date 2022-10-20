@@ -1,6 +1,5 @@
-package flower_store;
+package flowerstore;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,10 +19,13 @@ public class Flower {
 
     @Override
     public String toString() {
-        return flowertype+"{" +
-                "sepalLength=" + sepalLength +
-                ", color=" + color +
-                ", price=" + price +
-                '}';
+        return flowertype + "{"
+                + "sepalLength="
+                + sepalLength
+                + ", color="
+                + color
+                + ", price="
+                + price
+                + '}';
     }
 }

@@ -1,4 +1,4 @@
-package flower_store;
+package flowerstore;
 
 public enum FlowerType {
     CHAMOMILE("Chamomile"), ROSE("Rose"), TULIP("Tulip");

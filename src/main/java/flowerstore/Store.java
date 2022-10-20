@@ -1,4 +1,4 @@
-package flower_store;
+package flowerstore;
 
 import java.util.ArrayList;
 
@@ -12,8 +12,9 @@ public class Store {
     public ArrayList<FlowerBucket> search(FlowerBucket flowerBucket) {
         ArrayList<FlowerBucket> matchingBuckets = new ArrayList<FlowerBucket>();
         for (FlowerBucket availableBucket: inventory) {
-            if (availableBucket.equals(flowerBucket))
+            if (availableBucket.equals(flowerBucket)) {
                 matchingBuckets.add(availableBucket);
+            }
         }
         return matchingBuckets;
     }
@@ -35,13 +36,13 @@ public class Store {
         tulipFlower.setSepalLength(3);
         FlowerPack tulipPack = new FlowerPack(tulipFlower, 2);
 
-        FlowerBucket flowerBucket1 = new FlowerBucket();
-        flowerBucket1.add(rosePack);
-        flowerBucket1.add(tulipPack);
+        FlowerBucket flowerBucketOne = new FlowerBucket();
+        flowerBucketOne.add(rosePack);
+        flowerBucketOne.add(tulipPack);
 
-        flowerStore.add(flowerBucket1);
+        flowerStore.add(flowerBucketOne);
 
-        ArrayList<FlowerBucket> searchRes = flowerStore.search(flowerBucket1);
+        ArrayList<FlowerBucket> searchRes = flowerStore.search(flowerBucketOne);
 
         // search result
         int counter = 1;
