@@ -25,22 +25,22 @@ public class Store {
         // Buckets:
         // 1 - Rose x5 and Tulip x2
         Flower roseFlower = new Flower();
-        final int rosePrise = 20;
-        roseFlower.setPrice(rosePrise);
+        final int ROSEPRICE = 20;
+        roseFlower.setPrice(ROSEPRICE);
         roseFlower.setFlowertype(FlowerType.ROSE);
-        final int roseSepalLength = 2;
-        roseFlower.setSepalLength(roseSepalLength);
-        final int roseAmount = 5;
-        FlowerPack rosePack = new FlowerPack(roseFlower, roseAmount);
+        final int ROSESEPALLENGTH = 2;
+        roseFlower.setSepalLength(ROSESEPALLENGTH);
+        final int ROSEAMOUNT = 5;
+        FlowerPack rosePack = new FlowerPack(roseFlower, ROSEAMOUNT);
 
         Flower tulipFlower = new Flower();
-        final int tulipPrise = 15;
-        tulipFlower.setPrice(tulipPrise);
+        final int TULIPRICE = 15;
+        tulipFlower.setPrice(TULIPRICE);
         tulipFlower.setFlowertype(FlowerType.TULIP);
-        final int tulipSepalLength = 3;
-        tulipFlower.setSepalLength(tulipSepalLength);
-        final int tulipAmount = 2;
-        FlowerPack tulipPack = new FlowerPack(tulipFlower, tulipAmount);
+        final int TULIPSEPALLENGTH = 3;
+        tulipFlower.setSepalLength(TULIPSEPALLENGTH);
+        final int TULIPAMOUNT = 2;
+        FlowerPack tulipPack = new FlowerPack(tulipFlower, TULIPAMOUNT);
 
         FlowerBucket flowerBucketOne = new FlowerBucket();
         flowerBucketOne.add(rosePack);
