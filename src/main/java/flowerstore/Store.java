@@ -3,7 +3,7 @@ package flowerstore;
 import java.util.ArrayList;
 
 public class Store {
-    ArrayList<FlowerBucket> inventory = new ArrayList<FlowerBucket>();
+    private ArrayList<FlowerBucket> inventory = new ArrayList<FlowerBucket>();
 
     public void add(FlowerBucket flowerBucket) {
         inventory.add(flowerBucket);
@@ -25,21 +25,21 @@ public class Store {
         // Buckets:
         // 1 - Rose x5 and Tulip x2
         Flower roseFlower = new Flower();
-        int rosePrise = 20;
+        final int rosePrise = 20;
         roseFlower.setPrice(rosePrise);
         roseFlower.setFlowertype(FlowerType.ROSE);
-        int roseSepalLength = 2;
+        final int roseSepalLength = 2;
         roseFlower.setSepalLength(roseSepalLength);
-        int roseAmount = 5;
+        final int roseAmount = 5;
         FlowerPack rosePack = new FlowerPack(roseFlower, roseAmount);
 
         Flower tulipFlower = new Flower();
-        int tulipPrise = 15;
+        final int tulipPrise = 15;
         tulipFlower.setPrice(tulipPrise);
         tulipFlower.setFlowertype(FlowerType.TULIP);
-        int tulipSepalLength = 3;
+        final int tulipSepalLength = 3;
         tulipFlower.setSepalLength(tulipSepalLength);
-        int tulipAmount = 2;
+        final int tulipAmount = 2;
         FlowerPack tulipPack = new FlowerPack(tulipFlower, tulipAmount);
 
         FlowerBucket flowerBucketOne = new FlowerBucket();
